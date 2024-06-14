@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: User-Mgmt-App
+    
+  datasource:
+    url: jdbc:mysql://localhost:3306/jrtp
+    username: root
+    password: test
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: amitkr933@gmail.com
+    password: svlb gmld dftn ohxq
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            
+app:
+  messages:
+    invalidLogin: Invalid Credentials..!!
+    invalidPwds: Password didn't matched..!
+    pwdUpdateFailed: Password update Failed
+    regSuccess: Registration successful
+    regFailure: Registration Failed
+    quoteEndpointUrl: https://type.fit/api/quotes
+    regEmailSubject: Your account created - Amit IT 
+    emailExist: User already registered
